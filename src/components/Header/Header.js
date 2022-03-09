@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./Header.css";
-import logo from '../out_logo.svg';
+import logo from './out_logo.svg';
 import SearchIcon from "@material-ui/icons/Search";
 
 function Header() {
@@ -9,12 +9,12 @@ function Header() {
     <div className="header">
       <div className="header__left">
         <img
-          src={require(logo)}
+          src={logo}
           alt="linkedout logo"
         />
         <div className="header__search">
           <SearchIcon />
-          <input type="text" />
+          <input type="text" placeholder="Search" />
         </div>
       </div>
 
