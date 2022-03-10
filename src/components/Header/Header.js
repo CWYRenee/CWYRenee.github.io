@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import logo from "./out_logo.svg";
+import logo from "./out_logo.png";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import SchoolIcon from '@material-ui/icons/School';
@@ -16,7 +16,7 @@ function Header() {
       <div className="header__left">
         <img
           src={logo}
-          alt="linkedout logo"
+          alt="linkedout_logo"
         />
         <div className="header__search">
           <SearchIcon />
@@ -30,7 +30,7 @@ function Header() {
         <HeaderOption Icon={BusinessCenterIcon} title="Experience" />
         <HeaderOption Icon={BuildIcon} title="Projects" />
         <HeaderOption Icon={RateReviewIcon} title="Contact Me" />
-        <HeaderOption Icon={ExitToAppIcon} title="Log Out" />
+        <HeaderOption Icon={ExitToAppIcon} title="LinkedIn" />
       </div>
     </div>
   );
