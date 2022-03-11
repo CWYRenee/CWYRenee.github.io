@@ -1,62 +1,45 @@
 import { Card, CardActionArea } from '@material-ui/core'
-import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
+import CardActions from '@mui/material/CardActions';
 import { Typography } from '@material-ui/core';
 import { Avatar } from '@material-ui/core';
-
+import Button from '@mui/material/Button';
 
 import React from 'react'
-import "./Profile.css";
+import "./Profile.sass";
 import profile_background from "./profile_background.JPG";
 import headshot from "./headshot.jpg";
 
 function Profile() {
   return (
-     <Card className='profile'>
-       <CardActionArea>
+    <Card className='profile' >
+      <CardActionArea className='profile_action' >
         <CardMedia
-          className= {profile_background}
+          className= "profile_background"
           component="img"
           src={profile_background}
         />
-        <Avatar 
-        className="headshot" 
-        src = {headshot} 
-        sx={{ width: 500, height: 500 }}/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+        <Avatar className="headshot" 
+        src = {headshot}
+        style={{ height: '180px', width: '180px', border: '5px solid white'}} />
+        <CardContent className="profile_content">
+          <Typography gutterBottom variant="h5" component="h5" style={{marginLeft: "20px", fontWeight: "bolder"}}>
+            Renee Chiu
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="body1" color="textSecondary" component="h6" style={{marginLeft: "20px", fontWeight: "bold"}}>
+            Major in Management, Minor in Computer Science
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions></CardActions>
-       
-       {/* <CardActionArea>
-        <CardMedia 
-            className = "profile_background"
-            image = {profile_background}
-        />
-      <CardHeader
-        avatar={
-          <Avatar 
-          className="headshot" src = {headshot} sx={{ width: 500, height: 500 }}/>
-        }
-      />
-      
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          This impressive paella is a perfect party dish and a fun meal to cook together with your
-          guests. Add 1 cup of frozen peas along with the mussels, if you like.
-        </Typography>
-      </CardContent>  
-      </CardActionArea> */}
-      </Card>
+      <CardActions className='profile_buttons' >
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">About</Button>
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Education</Button>
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Experience</Button>
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}href="">Projects</Button>
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Contact Me</Button>
+      </CardActions>
+    </Card>
   )
 }
 
