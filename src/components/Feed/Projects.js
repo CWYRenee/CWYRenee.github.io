@@ -10,17 +10,34 @@ import "./Projects.sass";
 
 function Projects() {
   return (
-    <Card className='projects' >
-    <CardActionArea className='projects_action' >
-      <CardContent className="profile_content">
-        <Typography gutterBottom variant="h5" component="h5" style={{marginLeft: "20px", fontWeight: "bolder"}}>
-          Renee Chiu
-        </Typography>
-        <Typography variant="body1" color="textSecondary" component="h6" style={{marginLeft: "20px", fontWeight: "bold"}}>
-          Major in Management, Minor in Computer Science
-        </Typography>
-      </CardContent>
-    </CardActionArea>
+  <Card className='projects' >
+    <CardContent className="project_content" style={{marginLeft: "20px"}}>
+      <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px"}}>
+      Projects
+      </Typography>
+      <CardActionArea href='https://docs.google.com/presentation/d/1ppivDnU28mpybBk6xVdqU3hwaAc0zkD6iPj7o6sRxCw/edit?usp=sharing'>
+      <Typography gutterBottom variant="h6" component="div">
+      Creating a Sustainable Community- NextGen Consulting Ltd.
+      </Typography>
+      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      Jan 2021 - Jan 2021
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+      A HR solution to rekindle a firm’s commitment to corporate social responsibility in a case competition environment (Cut to the Case- HRMC UBC).
+      </Typography>
+      </CardActionArea>
+      <CardActionArea>
+      <Typography gutterBottom variant="h6" component="div">
+      Creating a Sustainable Community- NextGen Consulting Ltd.
+      </Typography>
+      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      Jan 2021 - Jan 2021
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+      A HR solution to rekindle a firm’s commitment to corporate social responsibility in a case competition environment (Cut to the Case- HRMC UBC).
+      </Typography>
+      </CardActionArea>
+    </CardContent>
   </Card>
   )
 }
