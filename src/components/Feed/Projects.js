@@ -42,10 +42,10 @@ function Projects() {
 
       <CardActionArea className='ind_project' href='https://www.agorize.com/en/challenges/ai-for-future-business-challenge/teams/54916/participations/62467/previews#' target='_blank'>
       <Typography gutterBottom variant="h6" component="div" style={{marginTop: "20px"}}>
-      IoT and AI in Supply hain and Logistics
+      IoT and AI in Supply Chain and Logistics
       </Typography>
       <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
-      1 month | Jan 2021
+      Jan 2021
       </Typography>
       <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}}>
       A solution of a webapp + ML model upload-able on any edge device to deliver an ever improving model for fleet management in supporting responsible IoT and AI in Supply Chain and Logistics.
