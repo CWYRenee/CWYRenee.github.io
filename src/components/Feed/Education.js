@@ -1,9 +1,11 @@
 import { Card, CardActionArea } from '@material-ui/core'
 import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
 import { Typography } from '@material-ui/core';
 
 import React from 'react'
 import "./Education.sass";
+import ubc_logo from './ubc.jpg'
 
 function Education() {
   return (
@@ -12,8 +14,13 @@ function Education() {
       <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px"}}>
       Education
       </Typography>
-      
       <CardActionArea className='ind_edu' href='https://www.ubc.ca/' target='_blank'>
+      <CardMedia
+          className= "ubc_logo"
+          component="img"
+          src={ubc_logo}
+          height='10px'
+        />
       <Typography gutterBottom variant="h6" component="div" style={{marginTop: "20px"}}>
       The University of British Columbia
       </Typography>
@@ -27,7 +34,6 @@ function Education() {
       Outstanding Internatioanl Student Award recipient
       </Typography>
       </CardActionArea>
-
     </CardContent>
   </Card>
   )
