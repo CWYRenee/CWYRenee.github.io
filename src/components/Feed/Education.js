@@ -1,6 +1,7 @@
 import { Card, CardActionArea } from '@material-ui/core'
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import Grid from '@mui/material/Grid';
 import { Typography } from '@material-ui/core';
 
 import React from 'react'
@@ -14,14 +15,13 @@ function Education() {
       <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px"}}>
       Education
       </Typography>
-      <CardActionArea className='ind_edu' href='https://www.ubc.ca/' target='_blank'>
       <CardMedia
           className= "ubc_logo"
           component="img"
           src={ubc_logo}
-          height='10px'
         />
-      <Typography gutterBottom variant="h6" component="div" style={{marginTop: "20px"}}>
+      <CardActionArea className='ind_edu' href='https://www.ubc.ca/' target='_blank' style={{marginLeft: '80px'}}>
+      <Typography gutterBottom variant="h6" component="div">
       The University of British Columbia
       </Typography>
       <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
