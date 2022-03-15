@@ -9,6 +9,8 @@ import "./Experience.sass";
 import equifood_logo from './EquiFoodlogo.png'
 import jdcw_logo from './jdcw_logo.jpeg'
 import ubc_logo from './ubc.jpg'
+import ubs_logo from './ubs_logo.jpeg'
+
 
 function Experience() {
   return (
@@ -18,7 +20,25 @@ function Experience() {
       Experience
       </Typography>   
       
-      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
+      <CardActionArea className='ind_exp' href='https://www.ubs.com/ca/en.html' target='_blank' style={{marginLeft: '80px'}}>
+      <CardMedia
+          className= "logo"
+          component="img"
+          src={ubs_logo}
+        />
+      <Typography gutterBottom variant="h6" component="div" >
+      Group Technology Intern
+      </Typography>
+      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
+      3 mos | Jun 2021 - Aug 2021
+      </Typography>
+      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
+      Hong Kong
+      </Typography>
+      </CardActionArea>
+      <Divider />
+
+      <CardActionArea className='ind_exp' style={{marginLeft: '80px', marginTop: "20px"}}>
       <CardMedia
           className= "logo"
           component="img"
@@ -29,6 +49,9 @@ function Experience() {
       </Typography>
       <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
       Contract Part-time | Jan 2021 - Dec 2021
+      </Typography>
+      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
+      Canada
       </Typography>
       
       <Typography gutterBottom variant="h6" component="div">
@@ -111,6 +134,9 @@ function Experience() {
       <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
       5 mos | Sep 2020 - Jan 2021
       </Typography>
+      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
+      Canada
+      </Typography>
       <Typography variant="body1" style={{marginBottom: "20px"}} >
       • JDC West is the largest business competition in Western Canada; a prestigious event that hosts approximately 650 undergraduate delegates from twelve universities across British Columbia, Alberta, Saskatchewan, and Manitoba <br />
       • Competed in a team of three students to represent UBC Okanagan’s JDC West team in the Business Technology discipline in the 2021 virtual JDC West competition <br />
@@ -130,6 +156,9 @@ function Experience() {
       </Typography>
       <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
       9 mos | Jul 2020 - Mar 2021
+      </Typography>
+      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
+      Canada
       </Typography>
       <Typography variant="body1" gutterBottom>
       • Assisted in developing a scalable donation system in engaging businesses to promote food security <br />

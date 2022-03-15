@@ -16,13 +16,13 @@ function Projects() {
       
       <CardActionArea className='ind_project' href='https://cwyrenee.github.io/chromaticpuzzle/' target='_blank'>
       <Typography gutterBottom variant="h6" component="div" style={{marginTop: "20px"}}>
-      Flutter Puzzle Hack
+      Chromatic Puzzle
       </Typography>
       <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
       Feb 2022 - Mar 2022
       </Typography>
       <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}}>
-      A music inspired slide puzzle based on the C Chromatic scale. 
+      A music inspired slide puzzle based on the C Chromatic scale for the Flutter Puzzle Hack 2022. 
       </Typography>
       </CardActionArea>
       <Divider />
