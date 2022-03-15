@@ -35,7 +35,7 @@ function Experience() {
       • Trained weekly with new cases leading up to the competition <br />
       </Typography>
       </CardActionArea>
-      <Divider variant="middle" />
+      <Divider />
 
       <CardActionArea className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px'}}>
       <CardMedia
