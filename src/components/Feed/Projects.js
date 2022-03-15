@@ -1,9 +1,6 @@
 import { Card, CardActionArea } from '@material-ui/core'
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@mui/material/CardActions';
 import { Typography } from '@material-ui/core';
-import { Avatar } from '@material-ui/core';
 
 import React from 'react'
 import "./Projects.sass";
