@@ -31,7 +31,7 @@ function Education() {
       2018 - 2022
       </Typography>
       <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}}>
-      Outstanding Internatioanl Student Award recipient | Dean's Honour Roll
+      Outstanding International Student Award recipient | Dean's Honour Roll
       </Typography>
       </CardActionArea>
     </CardContent>
