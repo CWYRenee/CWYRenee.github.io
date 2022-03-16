@@ -5,6 +5,7 @@ import Profile from './components/Feed/Profile';
 import Projects from './components/Feed/Projects';
 import Education from './components/Feed/Education';
 import Experience from './components/Feed/Experience';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Experience />
     <Projects />
     <Education />
+    <Footer />
     </div>
   );
 }
