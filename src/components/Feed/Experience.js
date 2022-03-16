@@ -1,8 +1,9 @@
-import { Card, CardActionArea } from '@material-ui/core'
+import { Card, CardActionArea, IconButton } from '@material-ui/core'
 import CardContent from '@material-ui/core/CardContent';
 import { Typography } from '@material-ui/core';
 import CardMedia from '@material-ui/core/CardMedia';
 import Divider from '@mui/material/Divider';
+import CircleIcon from '@mui/icons-material/Circle';
 
 import React from 'react'
 import "./Experience.sass";
@@ -53,7 +54,9 @@ function Experience() {
       <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
       Canada
       </Typography>
-      
+      </CardActionArea>
+
+      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography gutterBottom variant="h6" component="div">
       COSC122 Undergraduate Teaching Assistant
       </Typography>
@@ -66,7 +69,9 @@ function Experience() {
       <Typography display="inline" variant="body1" style={{marginBottom: "20px"}} >
       • Conducted weekly two-hour tutorial sessions, marking assignments, and answering students’ inquiries about the subject to a class of 40 students <br />
       </Typography>
+      </CardActionArea>
 
+      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography gutterBottom variant="h6" component="div">
       Peer Notetaker
       </Typography>
@@ -79,7 +84,9 @@ function Experience() {
       <Typography display="inline" variant="body1" gutterBottom style={{marginBottom: "20px"}} >
       • Provided comprehensive and succinct notes within 24 hours of the lecture to students registered with the Disability Resource Centre <br />
       </Typography>
+      </CardActionArea>
       
+      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography display="inline" gutterBottom variant="h6" component="div">
       International Peer Recruitment Assistant (IPRA)
       </Typography>
@@ -91,7 +98,9 @@ function Experience() {
       • Working with other IPRA's and International Student Recruiter staff to develop a communication plan and overall messaging <br />
       • Engaged with 300+ students in a student panel for the Asia Applicant Information Event <br />
       </Typography>
+      </CardActionArea>
 
+      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography display="inline" gutterBottom variant="h6" component="div">
       Undergraduate Research Assistant
       </Typography>
@@ -105,7 +114,9 @@ function Experience() {
       • Systematically searched patent databases in Canada, the US, and globally using Selenium Python <br />
       • Created and compiled relevant findings into a dataset based on results of set search parameter <br />
       </Typography>
+      </CardActionArea>
 
+      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography display="inline" gutterBottom variant="h6" component="div">
       MGMT250 Undergraduate Teaching Assistant
       </Typography>
