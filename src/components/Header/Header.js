@@ -9,6 +9,7 @@ import BuildIcon from '@material-ui/icons/Build';
 import RateReviewIcon from '@material-ui/icons/RateReview';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import HeaderOption from "./HeaderOption";
+import Link from '@mui/material/Link';
 
 function Header() {
   return (
@@ -25,12 +26,12 @@ function Header() {
       </div>
 
       <div className="header__right">
-        <HeaderOption Icon={HomeIcon} title="Home" />
-        <HeaderOption Icon={SchoolIcon} title="Education" />
-        <HeaderOption Icon={BusinessCenterIcon} title="Experience" />
-        <HeaderOption Icon={BuildIcon} title="Projects" />
-        <HeaderOption Icon={RateReviewIcon} title="Contact Me" />
-        <HeaderOption Icon={ExitToAppIcon} title="LinkedIn" />
+        <Link to="/Profile" underline="none"><HeaderOption Icon={HomeIcon} title="Home" /></Link>
+        <Link to="/Education" underline="none"><HeaderOption Icon={SchoolIcon} title="Education"  /></Link>
+        <HeaderOption Icon={BusinessCenterIcon} title="Experience" onClick={() => window.open('./Experience')} />
+        <HeaderOption Icon={BuildIcon} title="Projects" href="./Projects" />
+        <HeaderOption Icon={RateReviewIcon} title="Contact Me" href="./ContactMe" />
+        <Link href="https://www.linkedin.com/in/renee-chiu-974255152/" target='_blank' rel="noopener" underline="none"><HeaderOption Icon={ExitToAppIcon} title="LinkedIn" /></Link>
       </div>
     </div>
   );
