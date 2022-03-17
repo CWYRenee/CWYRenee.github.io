@@ -13,7 +13,7 @@ import headshot from "./headshot.jpg";
 
 function Profile() {
   return (
-    <Card className='profile' >
+    <Card className='profile' id='profile' >
       <CardActionArea className='profile_action' >
         <CardMedia
           className= "profile_background"

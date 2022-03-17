@@ -8,7 +8,7 @@ import "./Projects.sass";
 
 function Projects() {
   return (
-  <Card className='projects' >
+  <Card className='projects' id='projects'>
     <CardContent className="project_content" style={{marginLeft: "20px"}}>
       <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px"}}>
       Projects

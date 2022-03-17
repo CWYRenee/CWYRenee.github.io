@@ -10,7 +10,7 @@ import ubc_logo from './ubc.jpg'
 
 function Education() {
   return (
-    <Card className='education' >
+    <Card className='education' id='education'>
     <CardContent className="education_content" style={{marginLeft: "20px"}}>
       <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px"}}>
       Education
