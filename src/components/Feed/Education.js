@@ -1,7 +1,6 @@
 import { Card, CardActionArea } from '@material-ui/core'
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Grid from '@mui/material/Grid';
 import { Typography } from '@material-ui/core';
 
 import React from 'react'

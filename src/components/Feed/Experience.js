@@ -1,9 +1,8 @@
-import { Card, CardActionArea, IconButton } from '@material-ui/core'
+import { Card, CardActionArea } from '@material-ui/core'
 import CardContent from '@material-ui/core/CardContent';
 import { Typography } from '@material-ui/core';
 import CardMedia from '@material-ui/core/CardMedia';
 import Divider from '@mui/material/Divider';
-import CircleIcon from '@mui/icons-material/Circle';
 
 import React from 'react'
 import "./Experience.sass";
