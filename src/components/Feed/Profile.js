@@ -11,7 +11,7 @@ import "./Profile.sass";
 import profile_background from "./profile_background.JPG";
 import headshot from "./headshot.jpg";
 
-function Profile() {
+const Profile = () => {
   return (
     <Card className='profile' id='profile' >
       <CardActionArea className='profile_action' >

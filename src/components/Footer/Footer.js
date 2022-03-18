@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core';
 import React from 'react'
 import './Footer.sass'
 
-function Footer() {
+const Footer = () => {
   return (
     <div className="footer">
         <Typography className='footer_content' variant="subtitle2" gutterBottom >

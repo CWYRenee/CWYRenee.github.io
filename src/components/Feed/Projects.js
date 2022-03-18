@@ -6,7 +6,7 @@ import Divider from '@mui/material/Divider';
 import React from 'react'
 import "./Projects.sass";
 
-function Projects() {
+const Projects = () => {
   return (
   <Card className='projects' id='projects'>
     <CardContent className="project_content" style={{marginLeft: "20px"}}>

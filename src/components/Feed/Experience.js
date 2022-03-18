@@ -12,7 +12,7 @@ import ubc_logo from './ubc.jpg'
 import ubs_logo from './ubs_logo.jpeg'
 
 
-function Experience() {
+const Experience = () => {
   return (
     <Card className='experience' id='experience' >
     <CardContent className="exp_content" style={{marginLeft: "20px"}}>

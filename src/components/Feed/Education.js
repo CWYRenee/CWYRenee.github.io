@@ -7,7 +7,7 @@ import React from 'react'
 import "./Education.sass";
 import ubc_logo from './ubc.jpg'
 
-function Education() {
+const Education = () => {
   return (
     <Card className='education' id='education'>
     <CardContent className="education_content" style={{marginLeft: "20px"}}>

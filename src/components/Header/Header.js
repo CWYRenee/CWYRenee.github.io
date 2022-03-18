@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Header.sass";
 import logo from "./out_logo.png";
 import SearchIcon from "@material-ui/icons/Search";
@@ -9,15 +9,12 @@ import BuildIcon from '@material-ui/icons/Build';
 import RateReviewIcon from '@material-ui/icons/RateReview';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import HeaderOption from "./HeaderOption";
-import { BrowserRouter, Link, Routes, Route, Router} from 'react-router-dom';
+import { HashLink as Link } from "react-router-hash-link";
+import { Router, Route } from "react-router-dom";
 
-import Profile from '../Feed/Profile'
-import Education from '../Feed/Education'
-import Experience from '../Feed/Experience'
-import Projects from '../Feed/Projects'
-import ContactMe from '../Feed/ContactMe'
 
-function Header() {
+export default class Header extends Component {
+  render() {
   return (
     <div className="header">
       <div className="header__left">
@@ -32,27 +29,18 @@ function Header() {
       </div>
 
       <div className="header__right">
-      <BrowserRouter>
-
-        <Link to="/profile" style={{ textDecoration: 'none' }}><HeaderOption Icon={HomeIcon} title="Home" /></Link>
-        <Link to="/education" style={{ textDecoration: 'none' }}><HeaderOption Icon={SchoolIcon} title="Education"  /></Link>
-        <Link to="/experience" style={{ textDecoration: 'none' }}> <HeaderOption Icon={BusinessCenterIcon} title="Experience" /></Link>
-        <Link to="/projects" style={{ textDecoration: 'none' }}><HeaderOption Icon={BuildIcon} title="Projects" href="./Projects" /></Link>
-        <Link to="/contactme" style={{ textDecoration: 'none' }}><HeaderOption Icon={RateReviewIcon} title="Contact Me" href="./ContactMe" /></Link>
-        <Link to="https://www.linkedin.com/in/renee-chiu-974255152/" target='_blank' rel="noopener" style={{ textDecoration: 'none' }}><HeaderOption Icon={ExitToAppIcon} title="LinkedIn" /></Link>
-     
-      <Routes>
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/education" element={<Education />} />
-      <Route path="/experience" element={<Experience />} />
-      <Route path="/projects" element={<Projects />} />
-      {/* <Route path="/contactme" element={<ContactMe />} /> */}
-      </Routes>
-      </BrowserRouter>
-  
+      <Router>
+        <Route>
+        <Link smooth to="#profile"><HeaderOption Icon={HomeIcon} title="Home" /></Link>
+        <Link smooth to="#education" style={{ textDecoration: 'none' }}><HeaderOption Icon={SchoolIcon} title="Education"  /></Link>
+        <Link smooth to="#experience" style={{ textDecoration: 'none' }}> <HeaderOption Icon={BusinessCenterIcon} title="Experience" /></Link>
+        <Link smooth to="#projects" style={{ textDecoration: 'none' }}><HeaderOption Icon={BuildIcon} title="Projects" href="./Projects" /></Link>
+        <Link smooth to="#contactme" style={{ textDecoration: 'none' }}><HeaderOption Icon={RateReviewIcon} title="Contact Me" href="./ContactMe" /></Link>
+        <a href="https://www.linkedin.com/in/renee-chiu-974255152/" target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}><HeaderOption Icon={ExitToAppIcon} title="LinkedIn" /></a>
+        </Route>
+      </Router>
       </div>
     </div>
   );
 }
-
-export default Header;
+}
