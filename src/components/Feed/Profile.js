@@ -12,8 +12,12 @@ import React from 'react'
 import "./Profile.sass";
 import profile_background from "./profile_background.JPG";
 import headshot from "./headshot.jpg";
+import ContactMe from "./ContactMe";
+import useModal from "./useModal";
 
 const Profile = () => {
+  const {isVisible, toggleModal} = useModal();
+
   return (
     <Card className='profile' id='profile' >
       <CardActionArea className='profile_action' >
@@ -40,7 +44,8 @@ const Profile = () => {
         <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Education</Button></Link>
         <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Experience</Button></Link>
         <Link smooth to="#projects" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}href="">Projects</Button></Link>
-        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Contact Me</Button>
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} onClick={toggleModal}>Contact Me</Button>
+        <ContactMe isVisible={isVisible} hideModal={toggleModal} />
         </BrowserRouter>
       </CardActions>
     </Card>
