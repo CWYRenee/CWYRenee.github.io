@@ -5,6 +5,8 @@ import CardActions from '@mui/material/CardActions';
 import { Typography } from '@material-ui/core';
 import { Avatar } from '@material-ui/core';
 import Button from '@mui/material/Button';
+import { HashLink as Link } from "react-router-hash-link";
+import { BrowserRouter } from 'react-router-dom';
 
 import React from 'react'
 import "./Profile.sass";
@@ -33,11 +35,13 @@ const Profile = () => {
         </CardContent>
       </CardActionArea>
       <CardActions className='profile_buttons' >
-        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">About</Button>
-        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Education</Button>
-        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Experience</Button>
-        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}href="">Projects</Button>
+        <BrowserRouter> 
+        <Link smooth to="#profile" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">About</Button></Link>
+        <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Education</Button></Link>
+        <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Experience</Button></Link>
+        <Link smooth to="#projects" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}href="">Projects</Button></Link>
         <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Contact Me</Button>
+        </BrowserRouter>
       </CardActions>
     </Card>
   )
