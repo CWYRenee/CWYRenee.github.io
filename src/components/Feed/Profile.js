@@ -8,15 +8,17 @@ import Button from '@mui/material/Button';
 import { HashLink as Link } from "react-router-hash-link";
 import { BrowserRouter } from 'react-router-dom';
 
-import React from 'react'
+
+import React, {useRef} from 'react'
 import "./Profile.sass";
+import Modal from './modal'
 import profile_background from "./profile_background.JPG";
 import headshot from "./headshot.jpg";
 import ContactMe from "./ContactMe";
-import useModal from "./useModal";
+import useModal from "./modal";
 
 const Profile = () => {
-  const {isVisible, toggleModal} = useModal();
+  const modal = useRef(null)
 
   return (
     <Card className='profile' id='profile' >
@@ -44,8 +46,10 @@ const Profile = () => {
         <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Education</Button></Link>
         <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Experience</Button></Link>
         <Link smooth to="#projects" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}href="">Projects</Button></Link>
-        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} onClick={toggleModal}>Contact Me</Button>
-        <ContactMe isVisible={isVisible} hideModal={toggleModal} />
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} onClick={() => modal.current.open()}>Contact Me</Button>
+        <Modal ref={modal}>
+          Hello World
+        </Modal>
         </BrowserRouter>
       </CardActions>
     </Card>
