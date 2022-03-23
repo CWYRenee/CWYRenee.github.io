@@ -1,4 +1,6 @@
 import React from 'react'
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -11,21 +13,24 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
+import './ContactCard.sass'
+
+
 export default function ContactCard() {
   return (
-    <List>
+    <List className='contacts'>
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-          <DraftsIcon />
-          </ListItemIcon>
+          <DraftsIcon sx={{ color: 'white' }}/>
+          </ListItemIcon >
           <ListItemText primary="Email" />
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <LinkedInIcon />
+            <LinkedInIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
           <ListItemText primary="LinkedIn" />
         </ListItemButton>
@@ -33,7 +38,7 @@ export default function ContactCard() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <FacebookIcon />
+            <FacebookIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
           <ListItemText primary="Facebook" />
         </ListItemButton>
@@ -41,7 +46,7 @@ export default function ContactCard() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <TwitterIcon />
+            <TwitterIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
           <ListItemText primary="Twitter" />
         </ListItemButton>
@@ -49,15 +54,15 @@ export default function ContactCard() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <InstagramIcon />
+            <InstagramIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
           <ListItemText primary="Instagram" />
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
-        <ListItemButton>
+        <ListItemButton >
           <ListItemIcon>
-            <LocalPhoneIcon />
+            <LocalPhoneIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
           <ListItemText primary="Phone" />
         </ListItemButton>
