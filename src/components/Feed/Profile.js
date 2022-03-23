@@ -8,13 +8,12 @@ import Button from '@mui/material/Button';
 import { HashLink as Link } from "react-router-hash-link";
 import { BrowserRouter } from 'react-router-dom';
 
-
 import React, {useRef} from 'react'
 import "./Profile.sass";
 import Modal from './Modal'
 import profile_background from "./profile_background.JPG";
 import headshot from "./headshot.jpg";
-import ContactMe from "./ContactMe";
+import ContactCard from "./ContactCard";
 
 const Profile = () => {
   const modal = useRef(null)
@@ -49,7 +48,7 @@ const Profile = () => {
         </BrowserRouter>
       </CardActions>
       <Modal ref={modal}>
-      <div>Hello World</div>
+        <ContactCard />
       </Modal>
     </Card>
   )

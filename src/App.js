@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import ContactMe from './components/Feed/ContactMe'
 import Header from './components/Header/Header';
 import Profile from './components/Feed/Profile';
 import Projects from './components/Feed/Projects';
