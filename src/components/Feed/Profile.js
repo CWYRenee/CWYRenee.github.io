@@ -11,11 +11,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 import React, {useRef} from 'react'
 import "./Profile.sass";
-import Modal from './modal'
+import Modal from './Modal'
 import profile_background from "./profile_background.JPG";
 import headshot from "./headshot.jpg";
 import ContactMe from "./ContactMe";
-import useModal from "./modal";
 
 const Profile = () => {
   const modal = useRef(null)
@@ -46,12 +45,12 @@ const Profile = () => {
         <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Education</Button></Link>
         <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Experience</Button></Link>
         <Link smooth to="#projects" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}href="">Projects</Button></Link>
-        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} onClick={() => modal.current.open()}>Contact Me</Button>
-        <Modal ref={modal}>
-          Hello World
-        </Modal>
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} onClick={() => {modal.current.open()}}>Contact Me</Button>
         </BrowserRouter>
       </CardActions>
+      <Modal ref={modal}>
+      <div>Hello World</div>
+      </Modal>
     </Card>
   )
 }
