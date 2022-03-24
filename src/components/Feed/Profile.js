@@ -12,7 +12,7 @@ import { BrowserRouter } from 'react-router-dom';
 import React, {useRef} from 'react'
 import "./Profile.sass";
 import Modal from './Modal'
-import profile_background from "./profile_background.JPG";
+import profile_background from "./profile_background.jpg";
 import headshot from "./headshot.jpg";
 import ContactCard from "./ContactCard";
 
