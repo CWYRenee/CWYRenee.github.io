@@ -5,6 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import { Typography } from '@material-ui/core';
 import { Avatar } from '@material-ui/core';
 import Button from '@mui/material/Button';
+import Popover from '@mui/material/Popover';
 import { HashLink as Link } from "react-router-hash-link";
 import { BrowserRouter } from 'react-router-dom';
 
@@ -15,8 +16,22 @@ import profile_background from "./profile_background.JPG";
 import headshot from "./headshot.jpg";
 import ContactCard from "./ContactCard";
 
+
 const Profile = () => {
-  const modal = useRef(null)
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
+  
+  const modal = useRef(null);
 
   return (
     <Card className='profile' id='profile' >
@@ -40,7 +55,19 @@ const Profile = () => {
       </CardActionArea>
       <CardActions className='profile_buttons' >
         <BrowserRouter> 
-        <Link smooth to="#profile" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">About</Button></Link>
+        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} aria-describedby={id} onClick={handleClick}>About</Button>
+        <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
+        <Typography sx={{ p: 2 }}>Take a look through this site</Typography>
+      </Popover>
         <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Education</Button></Link>
         <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} href="">Experience</Button></Link>
         <Link smooth to="#projects" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}href="">Projects</Button></Link>
