@@ -16,7 +16,7 @@ const Experience = () => {
   return (
     <Card className='experience' id='experience' >
     <CardContent className="exp_content" style={{marginLeft: "20px"}}>
-      <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px"}}>
+      <Typography  variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px", marginTop:'20px'}}>
       Experience
       </Typography>   
       
@@ -56,16 +56,16 @@ const Experience = () => {
       </CardContent>
 
       <CardContent className='ind_exp' style={{marginLeft: '80px'}}>
-      <Typography variant="h6" component="div">
+      <Typography gutterBottom variant="h6" component="div">
       COSC122 Undergraduate Teaching Assistant
       </Typography>
-      <Typography display="inline" variant="subtitle2" component="div" style={{fontStyle: "italic", marginBottom: "20px"}}>
+      <Typography display="inline" variant="subtitle2" component="div" style={{fontStyle: "italic"}}>
       Introduction to computer skills (electronic communication, websites, Internet, document editing, programming, data analysis using spreadsheets/databases) and concepts (information representation, abstraction, algorithmic thinking)
       </Typography>
       <Typography gutterBottom variant="subtitle2" component="div">
       4 mos | Sep 2021 - Dec 2021
       </Typography>
-      <Typography display="inline" variant="body1" style={{marginBottom: "10px"}}>
+      <Typography gutterBottom display="inline" variant="body1" >
       • Conducted weekly two-hour tutorial sessions, marking assignments, and answering students’ inquiries about the subject to a class of 40 students <br />
       </Typography>
       </CardContent>
@@ -74,13 +74,13 @@ const Experience = () => {
       <Typography gutterBottom variant="h6" component="div">
       Peer Notetaker
       </Typography>
-      <Typography display="inline" variant="subtitle2" gutterBottom component="div" style={{fontStyle: "italic"}}>
+      <Typography display="inline" variant="subtitle2" component="div" style={{fontStyle: "italic"}}>
       MGMT422 Project Management & MGMT443 New Product and Service Development
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography variant="subtitle2" gutterBottom component="div">
       4 mos | Sep 2021 - Dec 2021
       </Typography>
-      <Typography display="inline" variant="body1" gutterBottom style={{marginBottom: "20px"}} >
+      <Typography display="inline" variant="body1" gutterBottom >
       • Provided comprehensive and succinct notes within 24 hours of the lecture to students registered with the Disability Resource Centre <br />
       </Typography>
       </CardContent>
@@ -89,10 +89,10 @@ const Experience = () => {
       <Typography display="inline" gutterBottom variant="h6" component="div">
       International Peer Recruitment Assistant (IPRA)
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography gutterBottom variant="subtitle2" component="div">
       5 mos | Feb 2021 - Jun 2021
       </Typography>
-      <Typography display="inline" variant="body1" gutterBottom style={{marginBottom: "20px"}} >
+      <Typography display="inline" variant="body1" gutterBottom >
       • Initiating contact with international applicants and international admits to provide faculty and program-specific information <br />
       • Working with other IPRA's and International Student Recruiter staff to develop a communication plan and overall messaging <br />
       • Engaged with 300+ students in a student panel for the Asia Applicant Information Event <br />
@@ -103,10 +103,10 @@ const Experience = () => {
       <Typography display="inline" gutterBottom variant="h6" component="div">
       Undergraduate Research Assistant
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{fontStyle: "italic"}}>
+      <Typography variant="subtitle2" component="div" style={{fontStyle: "italic"}}>
       Patent Research
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography variant="subtitle2" gutterBottom component="div">
       1 yr 2 mos | Sep 2020 - May 2021 --- Aug 2021 - Dec 2021
       </Typography>
       <Typography display="inline" variant="body1" gutterBottom style={{marginBottom: "20px"}} >
@@ -119,20 +119,20 @@ const Experience = () => {
       <Typography display="inline" gutterBottom variant="h6" component="div">
       MGMT250 Undergraduate Teaching Assistant
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{fontStyle: "italic"}}>
+      <Typography variant="subtitle2" component="div" style={{fontStyle: "italic"}}>
       IT managerial issues and their impact on small and medium enterprises and their people
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography variant="subtitle2" gutterBottom component="div">
       4 mos | Jan 2021 - Apr 2021
       </Typography>
-      <Typography display="inline" variant="body1" style={{marginBottom: "20px"}}>
+      <Typography gutterBottom display="inline" variant="body1" >
       • Conducted three weekly tutorial sessions to a class of 20 students <br />
       • Marked assignments and answered students’ inquiries about the subject 
       </Typography>
       </CardContent>
       <Divider />
       
-      <CardContent className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px', marginTop:'20px'}}>
       <CardMedia
           className= "logo"
           component="img"
@@ -141,12 +141,10 @@ const Experience = () => {
       <Typography display="inline" gutterBottom variant="h6" component="div" style={{marginTop: "20px"}}>
       Business Technology Discipline Academic Delegate 
       </Typography>
-      <Typography  variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography gutterBottom variant="subtitle2" component="div">
       5 mos | Sep 2020 - Jan 2021
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
-      </Typography>
-      <Typography display="inline" variant="body1" style={{marginBottom: "20px"}} >
+      <Typography gutterBottom display="inline" variant="body1"  >
       • JDC West is the largest business competition in Western Canada; a prestigious event that hosts approximately 650 undergraduate delegates from twelve universities across British Columbia, Alberta, Saskatchewan, and Manitoba <br />
       • Competed in a team of three students to represent UBC Okanagan’s JDC West team in the Business Technology discipline in the 2021 virtual JDC West competition <br />
       • Trained weekly with new cases leading up to the competition <br />
@@ -154,7 +152,7 @@ const Experience = () => {
       </CardContent>
       <Divider />
 
-      <CardContent className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px', marginTop:'20px'}}>
       <CardMedia
           className= "logo"
           component="img"
@@ -163,11 +161,8 @@ const Experience = () => {
       <Typography display="inline" gutterBottom variant="h6" component="div" style={{marginTop: "20px"}}>
       Executive Project Member
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography variant="subtitle2" gutterBottom component="div">
       9 mos | Jul 2020 - Mar 2021
-      </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
-      Canada
       </Typography>
       <Typography display="inline" variant="body1" gutterBottom>
       • Assisted in developing a scalable donation system in engaging businesses to promote food security <br />

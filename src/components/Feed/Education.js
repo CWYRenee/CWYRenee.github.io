@@ -11,15 +11,16 @@ const Education = () => {
   return (
     <Card className='education' id='education'>
     <CardContent className="education_content" style={{marginLeft: "20px"}}>
-      <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px"}}>
+      <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px", marginTop:'20px'}}>
       Education
       </Typography>
       <CardMedia
           className= "ubc_logo"
           component="img"
           src={ubc_logo}
+          style={{marginTop: "20px"}}
         />
-      <CardActionArea className='ind_edu' href='https://www.ubc.ca/' target='_blank' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_edu' href='https://www.ubc.ca/' target='_blank' style={{marginLeft: '80px'}}>
       <Typography gutterBottom variant="h6" component="div">
       The University of British Columbia
       </Typography>
@@ -32,7 +33,7 @@ const Education = () => {
       <Typography variant="body1" style={{marginBottom: "20px"}}>
       Outstanding International Student Award recipient | Dean's Honour Roll
       </Typography>
-      </CardActionArea>
+      </CardContent>
     </CardContent>
   </Card>
   )
