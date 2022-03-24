@@ -22,7 +22,7 @@ const Projects = () => {
       Feb 2022 - Mar 2022
       </Typography>
       <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}}>
-      A music inspired slide puzzle based on the C Chromatic scale for the Flutter Puzzle Hack 2022. 
+      A music inspired slide puzzle based on the C Chromatic scale for the Flutter Puzzle Hack 2022 
       </Typography>
       </CardActionArea>
       <Divider />
@@ -35,7 +35,7 @@ const Projects = () => {
       2 weeks | Jan 2021
       </Typography>
       <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}} >
-      A HR solution to rekindle a firm’s commitment to corporate social responsibility in a case competition environment (Cut to the Case- HRMC UBC).
+      A HR solution to rekindle a firm’s commitment to corporate social responsibility in a case competition environment (Cut to the Case- HRMC UBC)
       </Typography>
       </CardActionArea>
       <Divider />
@@ -48,7 +48,7 @@ const Projects = () => {
       Jan 2021
       </Typography>
       <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}}>
-      A solution of a webapp + ML model upload-able on any edge device to deliver an ever improving model for fleet management in supporting responsible IoT and AI in Supply Chain and Logistics.
+      A solution of a webapp + ML model upload-able on any edge device to deliver an ever improving model for fleet management in supporting responsible IoT and AI in Supply Chain and Logistics
       </Typography>
       </CardActionArea>
       <Divider />
@@ -61,7 +61,7 @@ const Projects = () => {
       48 hrs | Nov 2020
       </Typography>
       <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}}>
-      A solution of a webapp + ML model upload-able on any edge device to deliver an ever improving model for fleet management in supporting responsible IoT and AI in Supply Chain and Logistics.
+      A solution of a webapp + ML model upload-able on any edge device to deliver an ever improving model for fleet management in supporting responsible IoT and AI in Supply Chain and Logistics
       </Typography>
       </CardActionArea>
       <Divider />
@@ -74,7 +74,7 @@ const Projects = () => {
       48 hrs | Feb 2020
       </Typography>
       <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}}>
-      Awarded ‘Promising Ventures’ in the 2020 Entrepreneur Bootcamp for trying to solve food insecurities amongst students by connecting students who do not know how to cook with students who know via a webapp.
+      Awarded ‘Promising Ventures’ in the 2020 Entrepreneur Bootcamp for trying to solve food insecurities amongst students by connecting students who do not know how to cook with students who know via a webapp
       </Typography>
       </CardActionArea>
 
