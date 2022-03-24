@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, useRef } from "react";
 import "./Header.sass";
 import logo from "./out_logo.png";
+import Button from '@mui/material/Button';
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import SchoolIcon from '@material-ui/icons/School';
@@ -10,13 +11,16 @@ import RateReviewIcon from '@material-ui/icons/RateReview';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import HeaderOption from "./HeaderOption";
 import { HashLink as Link } from "react-router-hash-link";
-import { Router, Route } from "react-router-dom";
 import { BrowserRouter } from 'react-router-dom';
+import Modal from '../Feed/Modal'
+import ContactCard from "../Feed/ContactCard";
 
 
-export default class Header extends Component {
-  render() {
-  return (
+const Header = () => {
+
+  const modal = useRef(null)
+
+    return (
     <div className="header">
       <div className="header__left">
         <img
@@ -35,11 +39,15 @@ export default class Header extends Component {
         <Link smooth to="#education" style={{ textDecoration: 'none' }}><HeaderOption Icon={SchoolIcon} title="Education"  /></Link>
         <Link smooth to="#experience" style={{ textDecoration: 'none' }}> <HeaderOption Icon={BusinessCenterIcon} title="Experience" /></Link>
         <Link smooth to="#projects" style={{ textDecoration: 'none' }}><HeaderOption Icon={BuildIcon} title="Projects" href="./Projects" /></Link>
-        <Link smooth to="#contactme" style={{ textDecoration: 'none' }}><HeaderOption Icon={RateReviewIcon} title="Contact Me" href="./ContactMe" /></Link>
-        <Link to="https://www.linkedin.com/in/renee-chiu-974255152/" target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}><HeaderOption Icon={ExitToAppIcon} title="LinkedIn" /></Link>
+        <Link smooth to="#contactme" style={{ textDecoration: 'none' }} onClick={() => {modal.current.open()}}><HeaderOption Icon={RateReviewIcon} title="Contact Me"/></Link>
+        <Link to={'https://www.linkedin.com/in/renee-chiu-974255152/'} target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}><HeaderOption Icon={ExitToAppIcon} title="LinkedIn" /></Link>
       </BrowserRouter> 
+      <Modal ref={modal}>
+        <ContactCard />
+      </Modal>
       </div>
     </div>
   );
 }
-}
+
+export default Header

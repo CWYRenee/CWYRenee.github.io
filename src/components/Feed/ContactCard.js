@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import './ContactCard.sass'
 
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
@@ -14,6 +14,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
 export default function ContactCard() {
@@ -22,13 +23,22 @@ export default function ContactCard() {
   const linkedin = 'https://www.linkedin.com/in/renee-chiu-974255152/'
   const facebook = 'https://www.facebook.com/profile.php?id=100009776647358'
   const twitter = '@ReneeCWY'
-  const instagram = 'renee.cwy'
-  const phone = 'why are you trying to call me?'
+  const instagram = '@renee.cwy'
+  const phone = 'Why are you trying to call me?'
+  const address = 'Are you a stalker?'
+
+  const [copyText, setCopyText] = useState("Click to Copy")
 
   return (
-    <List className='contacts' >
+    <List className='contacts'>
+      <div className='copy'>{copyText}</div>
       <ListItem disablePadding>
-        <ListItemButton onClick={() => navigator.clipboard.writeText(email)} >
+        <ListItemButton onClick={() => {
+          navigator.clipboard.writeText(email); 
+          setCopyText("Address copied!");
+          setTimeout(() => {
+            setCopyText("Click to Copy");
+          }, 1000);}} >
           <ListItemIcon>
           <DraftsIcon sx={{ color: 'white' }}/>
           </ListItemIcon >
@@ -36,7 +46,12 @@ export default function ContactCard() {
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
-        <ListItemButton>
+        <ListItemButton onClick={() => {
+          navigator.clipboard.writeText(linkedin);
+          setCopyText("Link copied!");
+          setTimeout(() => {
+            setCopyText("Click to Copy");
+          }, 1000);}} >
           <ListItemIcon>
             <LinkedInIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
@@ -44,7 +59,12 @@ export default function ContactCard() {
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
-        <ListItemButton>
+        <ListItemButton onClick={() => {
+          navigator.clipboard.writeText(facebook);
+          setCopyText("Link copied!");
+          setTimeout(() => {
+            setCopyText("Click to Copy");
+          }, 1000);}} >
           <ListItemIcon>
             <FacebookIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
@@ -52,7 +72,12 @@ export default function ContactCard() {
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
-        <ListItemButton>
+        <ListItemButton onClick={() => {
+          navigator.clipboard.writeText(twitter);
+          setCopyText("Handle copied!");
+          setTimeout(() => {
+            setCopyText("Click to Copy");
+          }, 1000);}} >
           <ListItemIcon>
             <TwitterIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
@@ -60,7 +85,12 @@ export default function ContactCard() {
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
-        <ListItemButton>
+        <ListItemButton onClick={() => {
+          navigator.clipboard.writeText(instagram);
+          setCopyText("Handle copied!");
+          setTimeout(() => {
+            setCopyText("Click to Copy");
+          }, 1000);}} >
           <ListItemIcon>
             <InstagramIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
@@ -68,11 +98,29 @@ export default function ContactCard() {
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
-        <ListItemButton >
+        <ListItemButton onClick={() => {
+          navigator.clipboard.writeText(phone);
+          setCopyText("Number copied!");
+          setTimeout(() => {
+            setCopyText("Click to Copy");
+          }, 1000);}} >
           <ListItemIcon>
             <LocalPhoneIcon sx={{ color: 'white' }}/>
           </ListItemIcon>
           <ListItemText disableTypography primary={<Typography sx={{fontWeight: 'bolder', color: 'white'}}>Phone</Typography>} />
+        </ListItemButton>
+      </ListItem>
+      <ListItem disablePadding>
+        <ListItemButton onClick={() => {
+          navigator.clipboard.writeText(address);
+          setCopyText("Address copied!");
+          setTimeout(() => {
+            setCopyText("Click to Copy");
+          }, 1000);}} >
+          <ListItemIcon>
+            <LocationOnIcon sx={{ color: 'white' }}/>
+          </ListItemIcon>
+          <ListItemText disableTypography primary={<Typography sx={{fontWeight: 'bolder', color: 'white'}}>Address</Typography>} />
         </ListItemButton>
       </ListItem>
     </List>
