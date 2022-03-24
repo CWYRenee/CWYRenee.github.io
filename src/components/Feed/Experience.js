@@ -20,25 +20,25 @@ const Experience = () => {
       Experience
       </Typography>   
       
-      <CardActionArea className='ind_exp' href='https://www.ubs.com/ca/en.html' target='_blank' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' href='https://www.ubs.com/ca/en.html' target='_blank' style={{marginLeft: '80px'}}>
       <CardMedia
           className= "logo"
           component="img"
           src={ubs_logo}
         />
-      <Typography gutterBottom variant="h6" component="div" >
+      <Typography variant="h6" gutterBottom component="div" >
       Group Technology Intern
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
+      <Typography variant="subtitle2" component="div">
       3 mos | Jun 2021 - Aug 2021
       </Typography>
       <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
       Hong Kong
       </Typography>
-      </CardActionArea>
+      </CardContent>
       <Divider />
 
-      <CardActionArea className='ind_exp' style={{marginLeft: '80px', marginTop: "20px"}}>
+      <CardContent className='ind_exp' style={{marginLeft: '80px', marginTop: "20px"}}>
       <CardMedia
           className= "logo"
           component="img"
@@ -47,30 +47,30 @@ const Experience = () => {
       <Typography display="inline" gutterBottom variant="h6" component="div">
       The University of British Columbia
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography variant="subtitle2" component="div">
       Contract Part-time | Jan 2021 - Dec 2021
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "20px"}}>
+      <Typography gutterBottom variant="subtitle2" component="div" >
       Canada
       </Typography>
-      </CardActionArea>
+      </CardContent>
 
-      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
-      <Typography gutterBottom variant="h6" component="div">
+      <CardContent className='ind_exp' style={{marginLeft: '80px'}}>
+      <Typography variant="h6" component="div">
       COSC122 Undergraduate Teaching Assistant
       </Typography>
-      <Typography display="inline" variant="subtitle2" gutterBottom component="div" style={{fontStyle: "italic"}}>
+      <Typography display="inline" variant="subtitle2" component="div" style={{fontStyle: "italic", marginBottom: "20px"}}>
       Introduction to computer skills (electronic communication, websites, Internet, document editing, programming, data analysis using spreadsheets/databases) and concepts (information representation, abstraction, algorithmic thinking)
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography gutterBottom variant="subtitle2" component="div">
       4 mos | Sep 2021 - Dec 2021
       </Typography>
-      <Typography display="inline" variant="body1" style={{marginBottom: "20px"}} >
+      <Typography display="inline" variant="body1" style={{marginBottom: "10px"}}>
       • Conducted weekly two-hour tutorial sessions, marking assignments, and answering students’ inquiries about the subject to a class of 40 students <br />
       </Typography>
-      </CardActionArea>
+      </CardContent>
 
-      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography gutterBottom variant="h6" component="div">
       Peer Notetaker
       </Typography>
@@ -83,9 +83,9 @@ const Experience = () => {
       <Typography display="inline" variant="body1" gutterBottom style={{marginBottom: "20px"}} >
       • Provided comprehensive and succinct notes within 24 hours of the lecture to students registered with the Disability Resource Centre <br />
       </Typography>
-      </CardActionArea>
+      </CardContent>
       
-      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography display="inline" gutterBottom variant="h6" component="div">
       International Peer Recruitment Assistant (IPRA)
       </Typography>
@@ -97,9 +97,9 @@ const Experience = () => {
       • Working with other IPRA's and International Student Recruiter staff to develop a communication plan and overall messaging <br />
       • Engaged with 300+ students in a student panel for the Asia Applicant Information Event <br />
       </Typography>
-      </CardActionArea>
+      </CardContent>
 
-      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography display="inline" gutterBottom variant="h6" component="div">
       Undergraduate Research Assistant
       </Typography>
@@ -113,9 +113,9 @@ const Experience = () => {
       • Systematically searched patent databases in Canada, the US, and globally using Selenium Python <br />
       • Created and compiled relevant findings into a dataset based on results of set search parameter <br />
       </Typography>
-      </CardActionArea>
+      </CardContent>
 
-      <CardActionArea className='ind_exp' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' style={{marginLeft: '80px'}}>
       <Typography display="inline" gutterBottom variant="h6" component="div">
       MGMT250 Undergraduate Teaching Assistant
       </Typography>
@@ -129,10 +129,10 @@ const Experience = () => {
       • Conducted three weekly tutorial sessions to a class of 20 students <br />
       • Marked assignments and answered students’ inquiries about the subject 
       </Typography>
-      </CardActionArea>
+      </CardContent>
       <Divider />
       
-      <CardActionArea className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px'}}>
       <CardMedia
           className= "logo"
           component="img"
@@ -151,10 +151,10 @@ const Experience = () => {
       • Competed in a team of three students to represent UBC Okanagan’s JDC West team in the Business Technology discipline in the 2021 virtual JDC West competition <br />
       • Trained weekly with new cases leading up to the competition <br />
       </Typography>
-      </CardActionArea>
+      </CardContent>
       <Divider />
 
-      <CardActionArea className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px'}}>
+      <CardContent className='ind_exp' href='https://www.projectequifood.com/?fbclid=IwAR1XlLTc6kK0RprCf-2e9SzhIYYrJP2Jz7H9zO4m_B4I6XaLSOHFYRBp2YQ' target='_blank' style={{marginLeft: '80px'}}>
       <CardMedia
           className= "logo"
           component="img"
@@ -174,7 +174,7 @@ const Experience = () => {
       • Reached out to local businesses for a partnership opportunity <br />
       • Planned and created marketing contents tailored to partners' business <br />
       </Typography>
-      </CardActionArea>
+      </CardContent>
 
     </CardContent>
   </Card>

@@ -23,13 +23,13 @@ const Education = () => {
       <Typography gutterBottom variant="h6" component="div">
       The University of British Columbia
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography variant="subtitle2" component="div">
       Bachelor's of Management with Minor in Computer Science
       </Typography>
-      <Typography variant="subtitle2" gutterBottom component="div" style={{marginBottom: "10px"}}>
+      <Typography gutterBottom variant="subtitle2" component="div">
       2018 - 2022
       </Typography>
-      <Typography variant="body1" gutterBottom style={{marginBottom: "20px"}}>
+      <Typography variant="body1" style={{marginBottom: "20px"}}>
       Outstanding International Student Award recipient | Dean's Honour Roll
       </Typography>
       </CardActionArea>
