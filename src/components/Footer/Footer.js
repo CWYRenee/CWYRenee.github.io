@@ -8,7 +8,7 @@ import { Button } from '@mui/material';
 
 const Footer = () => {
   
-  const modal = useRef(null)
+  const modal = useRef(false)
   
   return (
     <div className="footer">

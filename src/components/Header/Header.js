@@ -17,7 +17,7 @@ import ContactCard from "../Feed/ContactCard";
 
 const Header = () => {
 
-  const modal = useRef(null)
+  const modal = useRef(false)
 
     return (
     <div className="header">
