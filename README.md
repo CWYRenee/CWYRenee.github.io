@@ -16,4 +16,4 @@ A shoutout to my friend who was sick of seeing everyone on LinkedIn flexing thei
 
 ## Check It Out
 
-Visit [my website]("webURL")!
+Visit [my website]("https://reneechiu.com/")!
