@@ -4,7 +4,7 @@ import './ContactCard.sass'
 
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
-import ListItem, { listItemClasses } from "@mui/material/ListItem";
+import ListItem from "@mui/material/ListItem";
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';

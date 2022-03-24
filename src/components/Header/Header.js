@@ -1,7 +1,6 @@
-import React, { Component, useRef } from "react";
+import React, { useRef } from "react";
 import "./Header.sass";
 import logo from "./out_logo.png";
-import Button from '@mui/material/Button';
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import SchoolIcon from '@material-ui/icons/School';
