@@ -15,7 +15,7 @@ const Footer = () => {
         <Typography className='footer_content' variant="subtitle2" gutterBottom >
         <div className="footer_left"><Button onClick={() => {modal.current.open()}} style={{ color:"#bf360c"}}>Contact Me </Button></div>
         
-        <div className="footer_right"><Button target='_blank' rel="noopener" style={{ color:"#bf360c"}}>Why LinkedOut?</Button></div>
+        <div className="footer_right"><Button href="https://github.com/CWYRenee/webportfolio#readme" target='_blank' rel="noopener" style={{ color:"#bf360c"}}>Why LinkedOut?</Button></div>
         </Typography>
         <Modal ref={modal}>
           <ContactCard />
