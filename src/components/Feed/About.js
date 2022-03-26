@@ -28,7 +28,7 @@ export default function About() {
       <ImageList className='about_images'
       variant="quilted"
       cols={6}
-    //   rowHeight='auto'
+      rowHeight='auto'
     >
       {itemData.map((item) => (
         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
@@ -48,62 +48,74 @@ export default function About() {
 
 const itemData = [
     {
-      img: '../about_images/breakfast.jpg',
-      title: 'Breakfast',
+      img: 'https://i.ibb.co/r7LZptW/summer.jpg',
+      title: 'Ideal Summer',
       description: '',
       rows: 2,
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-      title: 'Burger',
+      img: 'https://i.ibb.co/Yhjz5bp/ski-slopes.jpg',
+      title: 'Ski Slopes',
+      description: '',
     },
     {
-      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-      title: 'Camera',
+      img: 'https://i.ibb.co/sCt3xKN/ski-selfie.jpg',
+      title: 'I Love Skiing',
+      description: '',
     },
     {
-      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-      title: 'Coffee',
+      img: 'https://i.ibb.co/yYHPmnT/roadtrip.jpg',
+      title: 'Roadtrips',
+      description: '',
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-      title: 'Hats',
+      img: 'https://i.ibb.co/gMpbs3g/fishing.jpg',
+      title: 'Never Caught A Thing',
+      description: '',
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-      title: 'Honey',
-      author: '@arwinneil',
+      img: 'https://i.ibb.co/F684CXY/evening-sky.jpg',
+      title: 'Great View To Ponder On',
+      description: '',
       rows: 2,
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-      title: 'Basketball',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-      title: 'Fern',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-      title: 'Mushrooms',
+      img: 'https://i.ibb.co/Mcdv4NC/fall.jpg',
+      title: 'Awesome Colors',
+      description: '',
       rows: 2,
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-      title: 'Tomato basil',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-      title: 'Sea star',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-      title: 'Bike',
+      img: 'https://i.ibb.co/z7XSMvM/dumplings.jpg',
+      title: 'Finicky Dumpling Making',
+    //   rows: 2,
       cols: 2,
     },
+    {
+      img: 'https://i.ibb.co/rk4DwDL/cuppa.jpg',
+      title: 'A Good Cuppa',
+      description: '',
+      
+    },
+    {
+      img: 'https://i.ibb.co/tPzv26m/baking.jpg',
+      title: 'Procrastination',
+      description: '',
+    },
+    {
+      img: 'https://i.ibb.co/NTW64mB/breakfast.jpg',
+      title: 'Random Breakfast',
+      description: '',
+    },
+    {
+      img: 'https://i.ibb.co/KKzsLTt/cards.jpg',
+      title: 'The Gambling Den',
+      description: '',
+      cols: 2,
+    }
   ];
