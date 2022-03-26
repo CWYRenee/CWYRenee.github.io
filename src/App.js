@@ -5,6 +5,7 @@ import Profile from './components/Feed/Profile';
 import Projects from './components/Feed/Projects';
 import Education from './components/Feed/Education';
 import Experience from './components/Feed/Experience';
+import About from './components/Feed/About';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Experience />
     <Projects />
     <Education />
+    <About />
     <Footer />
     </div>
   );

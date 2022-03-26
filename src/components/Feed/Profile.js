@@ -66,7 +66,7 @@ const Profile = () => {
           horizontal: 'left',
         }}
       >
-        <Typography sx={{ p: 2 }}> Take a look through this site </Typography>
+        <Typography sx={{ p: 1 }}> A work in progress fun page </Typography>
       </Popover>
         <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >Education</Button></Link>
         <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >Experience</Button></Link>
