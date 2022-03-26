@@ -9,7 +9,7 @@ import "./Projects.sass";
 const Projects = () => {
   return (
   <Card className='projects' id='projects'>
-    <CardContent className="project_content" style={{marginLeft: "20px"}}>
+    <CardContent className="project_content" style={{marginLeft: "20px", marginRight: "20px"}}>
       <Typography gutterBottom variant="h5" component="div" style={{fontWeight: "bold", marginTop:'20px'}}>
       Projects
       </Typography>

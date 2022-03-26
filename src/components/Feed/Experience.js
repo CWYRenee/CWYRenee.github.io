@@ -15,7 +15,7 @@ import ubs_logo from './ubs_logo.jpeg'
 const Experience = () => {
   return (
     <Card className='experience' id='experience' >
-    <CardContent className="exp_content" style={{marginLeft: "20px"}}>
+    <CardContent className="exp_content" style={{marginLeft: "20px", marginRight: "20px"}}>
       <Typography  variant="h5" component="div" style={{fontWeight: "bold", marginBottom: "20px", marginTop:'20px'}}>
       Experience
       </Typography>   
