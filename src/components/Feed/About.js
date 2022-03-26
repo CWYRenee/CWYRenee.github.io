@@ -48,8 +48,9 @@ export default function About() {
 
 const itemData = [
     {
-      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+      img: '../about_images/breakfast.jpg',
       title: 'Breakfast',
+      description: '',
       rows: 2,
       cols: 2,
     },
