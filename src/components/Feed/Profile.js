@@ -56,6 +56,9 @@ const Profile = () => {
       <CardActions className='profile_buttons' >
         <BrowserRouter> 
         <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} aria-describedby={id} onClick={handleClick}>About</Button>
+        <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >Experience</Button></Link>
+        <Link smooth to="#projects" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}>Projects</Button></Link>
+        <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >Education</Button></Link>
         <Popover
         id={id}
         open={open}
@@ -68,9 +71,6 @@ const Profile = () => {
       >
         <Typography sx={{ p: 1 }}> A work in progress fun page </Typography>
       </Popover>
-        <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >Education</Button></Link>
-        <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >Experience</Button></Link>
-        <Link smooth to="#projects" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}>Projects</Button></Link>
         <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} onClick={() => {modal.current.open()}}>Contact Me</Button>
         </BrowserRouter>
       </CardActions>
