@@ -39,9 +39,9 @@ export default function About() {
             alt={item.title}
             loading="lazy"
           />
-          <ImageListItemBar className='img_text'
+          <ImageListItemBar 
             title={<Typography variant="subtitle1">{item.title}</Typography>}
-            subtitle={<span>{<Typography variant="caption" >{item.description}</Typography>}<br /><i>{item.sub}</i></span>}
+            subtitle={<div className='img_text'>{<Typography variant="caption">{item.description}</Typography>}<br /><br /><i>{item.sub}</i></div>}
             />
           </ImageListItem>
       ))}
