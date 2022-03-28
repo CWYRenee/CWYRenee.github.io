@@ -16,13 +16,6 @@ function srcset(image, size, rows = 1, cols = 1) {
     };
   }
 
-// function imgText(item.img) {
-    // <ImageListItemBar 
-    //     title={<div className='img_text'><Typography variant="subtitle1">{item.title}</Typography></div>}
-    //     subtitle={<div className='img_text'>{<Typography variant="caption">{item.description}</Typography>}<br /><br /><i>{item.sub}</i></div>}
-    // />
-// }
-
 export default function About() {
     
     const [isShown, setIsShown] = useState(false);
