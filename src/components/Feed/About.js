@@ -4,8 +4,7 @@ import { Typography } from '@material-ui/core';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-
-import React from 'react'
+import React , {useState} from 'react'
 import './About.sass'
 
 function srcset(image, size, rows = 1, cols = 1) {
@@ -17,7 +16,17 @@ function srcset(image, size, rows = 1, cols = 1) {
     };
   }
 
+// function imgText(item.img) {
+    // <ImageListItemBar 
+    //     title={<div className='img_text'><Typography variant="subtitle1">{item.title}</Typography></div>}
+    //     subtitle={<div className='img_text'>{<Typography variant="caption">{item.description}</Typography>}<br /><br /><i>{item.sub}</i></div>}
+    // />
+// }
+
 export default function About() {
+    
+    const [isShown, setIsShown] = useState(false);
+
   return (
     <Card className='about' id='about'>
     <CardContent className="about_content" style={{marginLeft: "20px", marginRight: "20px"}}>
@@ -37,13 +46,17 @@ export default function About() {
           <img
             {...srcset(item.img, 121, item.rows, item.cols)}
             alt={item.title}
-            loading="lazy"
+            loading="eager"
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
           />
+          {isShown && (
           <ImageListItemBar 
-            title={<Typography variant="subtitle1">{item.title}</Typography>}
-            subtitle={<div className='img_text'>{<Typography variant="caption">{item.description}</Typography>}<br /><br /><i>{item.sub}</i></div>}
-            />
-          </ImageListItem>
+          title={<div className='img_text'><Typography variant="subtitle1">{item.title}</Typography></div>}
+          subtitle={<div className='img_text'>{<Typography variant="caption">{item.description}</Typography>}<br /><br /><i>{item.sub}</i></div>}
+          />
+          )}
+        </ImageListItem>
       ))}
         </ImageList>
       </CardContent>
@@ -63,7 +76,7 @@ const itemData = [
     },
     {
         img: 'https://i.ibb.co/NTW64mB/breakfast.jpg',
-        title: 'RANDOM BREAKFAST',
+        title: 'RANDOM BREAKFASTS',
         description: 'A slow morning in good company.',
         sub:"Most days it's oatmeal and milk to start the grind.",
         rows: 1,
