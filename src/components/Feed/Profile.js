@@ -55,22 +55,10 @@ const Profile = () => {
       </CardActionArea>
       <CardActions className='profile_buttons' >
         <BrowserRouter> 
-        <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} aria-describedby={id} onClick={handleClick}>About</Button>
+        <Link smooth to="#about" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >About</Button></Link>
         <Link smooth to="#experience" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >Experience</Button></Link>
         <Link smooth to="#projects" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}}>Projects</Button></Link>
         <Link smooth to="#education" style={{ textDecoration: 'none' }}><Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} >Education</Button></Link>
-        <Popover
-        id={id}
-        open={open}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
-      >
-        <Typography sx={{ p: 1 }}> A work in progress fun page </Typography>
-      </Popover>
         <Button size="medium" style={{ color:"#bf360c", fontWeight: "bold"}} onClick={() => {modal.current.open()}}>Contact Me</Button>
         </BrowserRouter>
       </CardActions>
