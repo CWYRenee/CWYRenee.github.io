@@ -17,18 +17,6 @@ import ContactCard from "./ContactCard";
 
 
 const Profile = () => {
-  const [anchorEl, setAnchorEl] = React.useState(false);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(false);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? 'simple-popover' : undefined;
   
   const modal = useRef(false);
 

@@ -6,6 +6,18 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import React , {useState} from 'react'
 import './About.sass'
+import idealSummer from './aboutIMG/summer.jpg';
+import breakfast from './aboutIMG/breakfast.jpg';
+import skiing from './aboutIMG/ski_selfie.jpg';
+import roadtrip from './aboutIMG/roadtrip.jpg';
+import evening from './aboutIMG/evening_sky.jpg';
+import dumplings from './aboutIMG/dumplings.jpg';
+import fishing from './aboutIMG/fishing.jpg';
+import fall from './aboutIMG/fall.jpg';
+import cuppa from './aboutIMG/cuppa.jpg';
+import baking from './aboutIMG/baking.jpg';
+import cards from './aboutIMG/cards.jpg';
+import skiSlopes from './aboutIMG/ski_slopes.jpg';
 
 function srcset(image, size, rows = 1, cols = 1) {
     return {
@@ -60,7 +72,7 @@ export default function About() {
 
 const itemData = [
     {
-        img: 'https://i.ibb.co/r7LZptW/summer.jpg',
+        img: idealSummer,
         title: 'IDEAL SUMMER',
         quality: 100,
         description: 'Blue sky, clear water, chilling on a kayak with a breeze.',
@@ -69,7 +81,7 @@ const itemData = [
         cols: 3,
     },
     {
-        img: 'https://i.ibb.co/NTW64mB/breakfast.jpg',
+        img: breakfast,
         title: 'RANDOM BREAKFASTS',
         quality: 100,
         description: 'A slow morning in good company.',
@@ -79,7 +91,7 @@ const itemData = [
     },
     
     {
-        img: 'https://i.ibb.co/sCt3xKN/ski-selfie.jpg',
+        img: skiing,
         title: 'I LOVE SKIING',
         quality: 100,
         description: '2022- my first and last season.',
@@ -87,7 +99,7 @@ const itemData = [
         cols: 3,
     },
     {
-        img: 'https://i.ibb.co/yYHPmnT/roadtrip.jpg',
+        img: roadtrip,
         title: 'ROADTRIPS',
         quality: 100,
         description: 'Nothing beats 4 hours of karaoke with a view among friends.',
@@ -96,7 +108,7 @@ const itemData = [
         cols: 4,
     },
     {
-        img: 'https://i.ibb.co/F684CXY/evening-sky.jpg',
+        img: evening,
         title: 'GREAT VIEW TO PONDER ON',
         description: 'A bite too big to chew? Look up and breathe.',
         sub:'Sunset walks to catch up with a friend is the best remedy.',
@@ -104,7 +116,7 @@ const itemData = [
         cols: 2,
     },
     {
-        img: 'https://i.ibb.co/z7XSMvM/dumplings.jpg',
+        img: dumplings,
         title: 'FINICKY DUMPLING MAKING',
         description: '3 hours from scratch for 100 dumplings is the solo record.',
         sub:'A go to when the fridge is not inspiring enough.',
@@ -112,7 +124,7 @@ const itemData = [
         cols: 2,
     },
     {
-        img: 'https://i.ibb.co/gMpbs3g/fishing.jpg',
+        img: fishing,
         title: 'NEVER CAUGHT A THING',
         quality: 100,
         description: 'Underestimated the rainbow trouts. There goes my elaborate plan of biking to all the lakes, and fresh fish for dinner.',
@@ -122,7 +134,7 @@ const itemData = [
     },
     
     {
-        img: 'https://i.ibb.co/Mcdv4NC/fall.jpg',
+        img: fall,
         title: 'AWESOME COLOURS',
         quality: 100,
         description: 'Winter is coming...',
@@ -131,7 +143,7 @@ const itemData = [
     },
     
     {
-        img: 'https://i.ibb.co/rk4DwDL/cuppa.jpg',
+        img: cuppa,
         title: 'A GOOD CUPPA',
         quality: 100,
         description: 'Tea is still better than my new found love for crunching coffee beans.',
@@ -141,7 +153,7 @@ const itemData = [
     },
    
    {
-        img: 'https://i.ibb.co/tPzv26m/baking.jpg',
+        img: baking,
         title: 'PROCRASTINATION',
         quality: 100,
         description: 'The only time housekeeping is fun.',
@@ -150,7 +162,7 @@ const itemData = [
     
     },
     {
-        img: 'https://i.ibb.co/KKzsLTt/cards.jpg',
+        img: cards,
         title: 'THE GAMBLING DEN',
         quality: 100,
         description: 'It is a serious matter. Blood is shed.',
@@ -159,7 +171,7 @@ const itemData = [
         cols: 2,
     },
     {
-        img: 'https://i.ibb.co/Yhjz5bp/ski-slopes.jpg',
+        img: skiSlopes,
         title: 'SKI SLOPES',
         quality: 100,
         description: "A rare view, one that I'll miss when I'm back in the tropics.",
