@@ -62,6 +62,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/r7LZptW/summer.jpg',
         title: 'IDEAL SUMMER',
+        quality: 100,
         description: 'Blue sky, clear water, chilling on a kayak with a breeze.',
         sub:"I want to try out sailing.",
         rows: 2,
@@ -70,6 +71,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/NTW64mB/breakfast.jpg',
         title: 'RANDOM BREAKFASTS',
+        quality: 100,
         description: 'A slow morning in good company.',
         sub:"Most days it's oatmeal and milk to start the grind.",
         rows: 1,
@@ -79,6 +81,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/sCt3xKN/ski-selfie.jpg',
         title: 'I LOVE SKIING',
+        quality: 100,
         description: '2022- my first and last season.',
         rows: 1,
         cols: 3,
@@ -86,6 +89,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/yYHPmnT/roadtrip.jpg',
         title: 'ROADTRIPS',
+        quality: 100,
         description: 'Nothing beats 4 hours of karaoke with a view among friends.',
         sub:'The dream vehicle: a Rivian with Camp Kitchen, Ski and Bike Mount, plus a Tent Package.',
         rows: 1,
@@ -110,6 +114,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/gMpbs3g/fishing.jpg',
         title: 'NEVER CAUGHT A THING',
+        quality: 100,
         description: 'Underestimated the rainbow trouts. There goes my elaborate plan of biking to all the lakes, and fresh fish for dinner.',
         sub:'Hunting, shooting, fishing: difficult interests for someone from the city.',
         rows: 2,
@@ -119,6 +124,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/Mcdv4NC/fall.jpg',
         title: 'AWESOME COLOURS',
+        quality: 100,
         description: 'Winter is coming...',
         rows: 5,
         cols: 2,
@@ -127,6 +133,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/rk4DwDL/cuppa.jpg',
         title: 'A GOOD CUPPA',
+        quality: 100,
         description: 'Tea is still better than my new found love for crunching coffee beans.',
         sub:'2 cups of decaf, black AeroPress espresso when milk is out.',
         rows: 1,
@@ -136,6 +143,7 @@ const itemData = [
    {
         img: 'https://i.ibb.co/tPzv26m/baking.jpg',
         title: 'PROCRASTINATION',
+        quality: 100,
         description: 'The only time housekeeping is fun.',
         rows: 4,
         cols: 2,
@@ -144,6 +152,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/KKzsLTt/cards.jpg',
         title: 'THE GAMBLING DEN',
+        quality: 100,
         description: 'It is a serious matter. Blood is shed.',
         sub:'No bets, PG-13',
         rows: 4,
@@ -152,6 +161,7 @@ const itemData = [
     {
         img: 'https://i.ibb.co/Yhjz5bp/ski-slopes.jpg',
         title: 'SKI SLOPES',
+        quality: 100,
         description: "A rare view, one that I'll miss when I'm back in the tropics.",
         cols: 6,
     
