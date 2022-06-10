@@ -35,9 +35,9 @@ const Header = () => {
       <div className="header__right">
       <BrowserRouter> 
         <Link smooth to="#profile" style={{ textDecoration: 'none' }}><HeaderOption Icon={HomeIcon} title="Home" /></Link>
-        <Link smooth to="#education" style={{ textDecoration: 'none' }}><HeaderOption Icon={SchoolIcon} title="Education"  /></Link>
         <Link smooth to="#experience" style={{ textDecoration: 'none' }}> <HeaderOption Icon={BusinessCenterIcon} title="Experience" /></Link>
         <Link smooth to="#projects" style={{ textDecoration: 'none' }}><HeaderOption Icon={BuildIcon} title="Projects" href="./Projects" /></Link>
+        <Link smooth to="#education" style={{ textDecoration: 'none' }}><HeaderOption Icon={SchoolIcon} title="Education"  /></Link>
         <Link smooth to="#contactme" style={{ textDecoration: 'none' }} onClick={() => {modal.current.open()}}><HeaderOption Icon={RateReviewIcon} title="Contact Me"/></Link>
         <a href={'https://www.linkedin.com/in/renee-chiu-974255152/'} target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}><HeaderOption Icon={ExitToAppIcon} title="LinkedIn" /></a>
       </BrowserRouter> 

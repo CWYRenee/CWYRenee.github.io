@@ -31,7 +31,9 @@ const Education = () => {
       2018 - 2022
       </Typography>
       <Typography variant="body1" style={{marginBottom: "20px"}}>
-      Outstanding International Student Award recipient | Dean's Honour Roll
+      Outstanding International Student Award recipient <br/>
+      Dean's Honour Roll <br/>
+      Deputy Vice-Chancellor Scholarship for International Students recipient
       </Typography>
       </CardContent>
     </CardContent>

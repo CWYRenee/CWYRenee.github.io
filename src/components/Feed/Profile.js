@@ -36,7 +36,7 @@ const Profile = () => {
             Renee Chiu
           </Typography>
           <Typography variant="body1" color="textSecondary" component="h6" style={{marginLeft: "20px", fontWeight: "bold"}}>
-            Major in Management, Minor in Computer Science
+          <a href='https://www.credly.com/badges/6b24b40b-d52f-45de-9021-a59123aaaba8/public_url' target="_blank" rel="noopener noreferrer">CAPM®</a> | Major in Management, Minor in Computer Science
           </Typography>
         </CardContent>
       </CardActionArea>
